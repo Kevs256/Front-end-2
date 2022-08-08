@@ -164,6 +164,12 @@
             /* aca le pusimos color, tamaño de fuente, anchura de la letra, le quitamos el 
             margen de arriba, le pusimos margen abajo y aliniamos al centro*/
         }
+        .value{
+            color:var(--very-light-pink) ;
+            margin-top: 6px;
+            margin-bottom: 35px;
+            font-size: var(--md);
+        }
 
     </style>
 </head>
@@ -175,17 +181,18 @@
             <p class="subtitle">My account</p>
             <form action="" class="form">
                 <div>
-                    <label for="email" class="label">Name</label>
-                <input type="text" class="input input-email" id="email" placeholder="Camila Yokoo">
+                <label for="email" class="label">Name</label>
+                <p class="value">Camilayokoo</p>
+
 
                 <label for="password" class="label">Email addres</label>
-                <input type="password" class="input input-email" id="password" placeholder="Camilayokoo@gmail.com">
+                <p class="value">Camilayokoo@gmail.com</p>
 
                 <label for="password" class="label">Password</label>
-                <input type="password" class="input input-email" id="password" placeholder="********">
+                <p class="value">*********</p>
                 </div>
                 
-                <input type="submit" value="Edit" class="primary-button login-button">
+                <input type="submit" value="Edit" class="secondary-button login-button">
                 
                 
             </form>
