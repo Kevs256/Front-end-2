@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --white: #ffffff;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+            /* estas son las variables generales, se usan con var() */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand';
+        }
+        .mobile-menu{
+            padding: 24px;
+        }
+        .mobile-menu a{
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+            /* margin-bottom: 25px; */
+            /* esta cosa no se aplico, no se por que, entonces abajo */
+        }
+        .mobile-menu ul{
+            padding: 0;
+            margin: 0;
+            /* no se porque hizo esto, debe ser que el ul trae por defecto */
+            list-style: none;
+        }
+        .mobile-menu li{
+            margin-bottom: 28px;
+        }
+        .mobile-menu ul{
+            margin-top: 28px;
+        }
+        /* .email */
+        /* si ponia solo el .email habian problemas de especificidad,
+        se soluciono con poner ambas clases */
+        .mobile-menu .email{
+            font-size:var(--sm);
+            font-weight: 300;
+        }
+        .mobile-menu ul:nth-child(1){
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .mobile-menu ul:nth-child(2){
+            margin-bottom: 80px;
+        }
+        .mobile-menu .sing-out{
+            color: var(--hospital-green);
+            font-size:var(--sm);
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-menu">
+        <ul>
+            <li>
+                <a href="">CATEGORIES</a>
+            </li>
+            <li>
+                <a href="">All</a>
+            </li>
+            <li>
+                <a href="">Clothes</a>
+            </li>
+            <li>
+                <a href="">Electronics</a>
+            </li>
+            <li>
+                <a href="">Funitures</a>
+            </li>
+            <li>
+                <a href="">Toys</a>
+            </li>
+            <li>
+                <a href="">Others</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="">My orders</a>
+            </li>
+            <li>
+                <a href="">My account</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a class="email" href="">camilayaokoo@gmial.com</a>
+            </li>
+            <li>
+                <a class="sing-out" href="">Sing outt</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
